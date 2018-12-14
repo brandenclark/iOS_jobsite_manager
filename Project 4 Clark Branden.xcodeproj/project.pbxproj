@@ -7,21 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F1648116130FCC2D81AABF0 /* Pods_Project_4_Clark_Branden.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F990DCA20F072F6121100D4 /* Pods_Project_4_Clark_Branden.framework */; };
+		846435D421B89D0300972E6A /* JobDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846435D321B89D0300972E6A /* JobDetailController.swift */; };
+		846435D821B89D8200972E6A /* JobListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846435D721B89D8200972E6A /* JobListController.swift */; };
+		847752A521BC4ED300D42945 /* EquipmentManagerDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847752A421BC4ED300D42945 /* EquipmentManagerDatabase.swift */; };
+		8488482821B9E97D00AEEF39 /* NewJobController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488482721B9E97D00AEEF39 /* NewJobController.swift */; };
 		84D5A81621B0C2720057F486 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5A81521B0C2720057F486 /* AppDelegate.swift */; };
-		84D5A81821B0C2720057F486 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5A81721B0C2720057F486 /* ViewController.swift */; };
 		84D5A81B21B0C2720057F486 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D5A81921B0C2720057F486 /* Main.storyboard */; };
 		84D5A81D21B0C2730057F486 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D5A81C21B0C2730057F486 /* Assets.xcassets */; };
 		84D5A82021B0C2730057F486 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D5A81E21B0C2730057F486 /* LaunchScreen.storyboard */; };
+		84D5A82D21B0C5050057F486 /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5A82C21B0C5050057F486 /* Equipment.swift */; };
+		84D5A82F21B0C50E0057F486 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5A82E21B0C50E0057F486 /* Job.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F990DCA20F072F6121100D4 /* Pods_Project_4_Clark_Branden.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project_4_Clark_Branden.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6551B0BF729A8C7CBAEACA5A /* Pods-Project 4 Clark Branden.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project 4 Clark Branden.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Project 4 Clark Branden/Pods-Project 4 Clark Branden.debug.xcconfig"; sourceTree = "<group>"; };
+		846435D321B89D0300972E6A /* JobDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailController.swift; sourceTree = "<group>"; };
+		846435D721B89D8200972E6A /* JobListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListController.swift; sourceTree = "<group>"; };
+		847752A421BC4ED300D42945 /* EquipmentManagerDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentManagerDatabase.swift; sourceTree = "<group>"; };
+		8488482721B9E97D00AEEF39 /* NewJobController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewJobController.swift; sourceTree = "<group>"; };
 		84D5A81221B0C2720057F486 /* Project 4 Clark Branden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 4 Clark Branden.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D5A81521B0C2720057F486 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84D5A81721B0C2720057F486 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		84D5A81A21B0C2720057F486 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84D5A81C21B0C2730057F486 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84D5A81F21B0C2730057F486 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84D5A82121B0C2730057F486 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84D5A82C21B0C5050057F486 /* Equipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
+		84D5A82E21B0C50E0057F486 /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		B9A2E0EA66E4395895DA63F2 /* Pods-Project 4 Clark Branden.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project 4 Clark Branden.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project 4 Clark Branden/Pods-Project 4 Clark Branden.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F1648116130FCC2D81AABF0 /* Pods_Project_4_Clark_Branden.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		299A077718E46B2558836F19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F990DCA20F072F6121100D4 /* Pods_Project_4_Clark_Branden.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		84D5A80921B0C2710057F486 = {
 			isa = PBXGroup;
 			children = (
 				84D5A81421B0C2720057F486 /* Project 4 Clark Branden */,
 				84D5A81321B0C2720057F486 /* Products */,
+				A160E2B62F9405D37538A616 /* Pods */,
+				299A077718E46B2558836F19 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +79,60 @@
 		84D5A81421B0C2720057F486 /* Project 4 Clark Branden */ = {
 			isa = PBXGroup;
 			children = (
-				84D5A81521B0C2720057F486 /* AppDelegate.swift */,
-				84D5A81721B0C2720057F486 /* ViewController.swift */,
-				84D5A81921B0C2720057F486 /* Main.storyboard */,
-				84D5A81C21B0C2730057F486 /* Assets.xcassets */,
-				84D5A81E21B0C2730057F486 /* LaunchScreen.storyboard */,
-				84D5A82121B0C2730057F486 /* Info.plist */,
+				84D5A82A21B0C44E0057F486 /* Model */,
+				84D5A82921B0C44B0057F486 /* View */,
+				84D5A82821B0C4490057F486 /* Controller */,
+				84D5A82B21B0C4630057F486 /* Supporting Files */,
 			);
 			path = "Project 4 Clark Branden";
+			sourceTree = "<group>";
+		};
+		84D5A82821B0C4490057F486 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84D5A81521B0C2720057F486 /* AppDelegate.swift */,
+				846435D321B89D0300972E6A /* JobDetailController.swift */,
+				846435D721B89D8200972E6A /* JobListController.swift */,
+				8488482721B9E97D00AEEF39 /* NewJobController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84D5A82921B0C44B0057F486 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84D5A81E21B0C2730057F486 /* LaunchScreen.storyboard */,
+				84D5A81921B0C2720057F486 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84D5A82A21B0C44E0057F486 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84D5A82C21B0C5050057F486 /* Equipment.swift */,
+				84D5A82E21B0C50E0057F486 /* Job.swift */,
+				847752A421BC4ED300D42945 /* EquipmentManagerDatabase.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84D5A82B21B0C4630057F486 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84D5A81C21B0C2730057F486 /* Assets.xcassets */,
+				84D5A82121B0C2730057F486 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A160E2B62F9405D37538A616 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6551B0BF729A8C7CBAEACA5A /* Pods-Project 4 Clark Branden.debug.xcconfig */,
+				B9A2E0EA66E4395895DA63F2 /* Pods-Project 4 Clark Branden.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84D5A82421B0C2730057F486 /* Build configuration list for PBXNativeTarget "Project 4 Clark Branden" */;
 			buildPhases = (
+				890B44AC46B0B1D00EB76CCA /* [CP] Check Pods Manifest.lock */,
 				84D5A80E21B0C2710057F486 /* Sources */,
 				84D5A80F21B0C2710057F486 /* Frameworks */,
 				84D5A81021B0C2710057F486 /* Resources */,
+				67A114993B1EC99F6B15F45E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +203,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		67A114993B1EC99F6B15F45E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Project 4 Clark Branden/Pods-Project 4 Clark Branden-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GRDB.swift/GRDB.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRDB.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Project 4 Clark Branden/Pods-Project 4 Clark Branden-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		890B44AC46B0B1D00EB76CCA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Project 4 Clark Branden-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84D5A80E21B0C2710057F486 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84D5A81821B0C2720057F486 /* ViewController.swift in Sources */,
+				8488482821B9E97D00AEEF39 /* NewJobController.swift in Sources */,
+				846435D421B89D0300972E6A /* JobDetailController.swift in Sources */,
 				84D5A81621B0C2720057F486 /* AppDelegate.swift in Sources */,
+				846435D821B89D8200972E6A /* JobListController.swift in Sources */,
+				84D5A82D21B0C5050057F486 /* Equipment.swift in Sources */,
+				84D5A82F21B0C50E0057F486 /* Job.swift in Sources */,
+				847752A521BC4ED300D42945 /* EquipmentManagerDatabase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +405,7 @@
 		};
 		84D5A82521B0C2730057F486 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6551B0BF729A8C7CBAEACA5A /* Pods-Project 4 Clark Branden.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +424,7 @@
 		};
 		84D5A82621B0C2730057F486 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9A2E0EA66E4395895DA63F2 /* Pods-Project 4 Clark Branden.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cAB-Tx-cOY">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="112" translatesAutoresizingMaskIntoConstraints="NO" id="sC4-hL-8fA">
+                                <rect key="frame" x="91" y="147" width="193" height="352"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="42480-building-construction-icon" translatesAutoresizingMaskIntoConstraints="NO" id="BPG-Cv-4QF">
+                                        <rect key="frame" x="0.5" y="0.0" width="192" height="192"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="DbK-BG-eBS">
+                                        <rect key="frame" x="65" y="304" width="63" height="48"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0w3-sf-wkw">
+                                                <rect key="frame" x="0.0" y="0.0" width="63" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="Jobs"/>
+                                                <connections>
+                                                    <segue destination="yUf-Qv-rJT" kind="show" id="mkC-Ng-Mlo"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sC4-hL-8fA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7KZ-pY-4wL"/>
+                            <constraint firstItem="sC4-hL-8fA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="83" id="Ccm-uH-cGq"/>
+                            <constraint firstItem="sC4-hL-8fA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="91" id="IFE-A2-C4n"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TZp-Ic-Eug"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1716" y="61"/>
+        </scene>
+        <!--Jobs-->
+        <scene sceneID="V87-8y-AG4">
+            <objects>
+                <tableViewController id="yUf-Qv-rJT" customClass="JobListController" customModule="Project_4_Clark_Branden" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="AXS-x1-vfS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="JobCell" id="rSm-A4-4Aa">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rSm-A4-4Aa" id="ypu-VB-686">
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="yUf-Qv-rJT" id="dd2-NQ-KFJ"/>
+                            <outlet property="delegate" destination="yUf-Qv-rJT" id="F7k-bI-76H"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Jobs" id="SZd-hd-o0X">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ecR-al-mIS">
+                            <connections>
+                                <segue destination="t8t-ns-x98" kind="presentation" identifier="NewJob" id="ZiT-P4-cYu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="Y07-gF-QpG" kind="show" identifier="JobDetail" id="Bt1-Aq-XfU"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vz8-B9-WCL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2481" y="61"/>
+        </scene>
+        <!--Job Detail Controller-->
+        <scene sceneID="VuS-Iw-DFr">
+            <objects>
+                <viewController id="Y07-gF-QpG" customClass="JobDetailController" customModule="Project_4_Clark_Branden" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fJJ-tr-4O3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="B8n-hc-N72">
+                                <rect key="frame" x="106" y="302.5" width="163.5" height="126"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="j7i-V1-YjB">
+                                        <rect key="frame" x="0.0" y="0.0" width="96" height="126"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job ID:" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VjN-bp-2lW">
+                                                <rect key="frame" x="0.0" y="0.0" width="76.5" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGL-fo-Jdb">
+                                                <rect key="frame" x="0.0" y="48" width="71" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address:" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcc-WD-hUm">
+                                                <rect key="frame" x="0.0" y="96" width="96" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="4zk-oz-Iug">
+                                        <rect key="frame" x="104" y="0.0" width="59.5" height="126"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="194-Jb-WCA">
+                                                <rect key="frame" x="0.0" y="0.0" width="59.5" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZe-ur-0oM">
+                                                <rect key="frame" x="0.0" y="48" width="59.5" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hq-SC-BkH">
+                                                <rect key="frame" x="0.0" y="96" width="59.5" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCm-zr-w06">
+                                <rect key="frame" x="302" y="64" width="57" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="DeleteJob:" destination="Y07-gF-QpG" eventType="touchUpInside" id="YNi-te-wkb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GCm-zr-w06" firstAttribute="leading" secondItem="O2D-Te-rcx" secondAttribute="leading" constant="302" id="NA2-q6-mlj"/>
+                            <constraint firstItem="O2D-Te-rcx" firstAttribute="trailing" secondItem="GCm-zr-w06" secondAttribute="trailing" constant="16" id="U8d-Ca-JtC"/>
+                            <constraint firstItem="B8n-hc-N72" firstAttribute="centerX" secondItem="O2D-Te-rcx" secondAttribute="centerX" id="Y5A-oy-7Z0"/>
+                            <constraint firstItem="B8n-hc-N72" firstAttribute="centerY" secondItem="O2D-Te-rcx" secondAttribute="centerY" id="qaI-Br-0lt"/>
+                            <constraint firstItem="GCm-zr-w06" firstAttribute="top" secondItem="O2D-Te-rcx" secondAttribute="top" id="wev-et-uKn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O2D-Te-rcx"/>
+                    </view>
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="Address" destination="1hq-SC-BkH" id="2ih-ES-hJ3"/>
+                        <outlet property="JobID" destination="194-Jb-WCA" id="zDL-Dz-e2e"/>
+                        <outlet property="Name" destination="bZe-ur-0oM" id="AIH-BF-vbq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wtp-WP-Hnv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3270" y="427"/>
+        </scene>
+        <!--New Job Controller-->
+        <scene sceneID="2U7-6Q-neX">
+            <objects>
+                <viewController id="t8t-ns-x98" customClass="NewJobController" customModule="Project_4_Clark_Branden" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ic3-7E-fFt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="rzQ-Ez-c8J">
+                                <rect key="frame" x="84.5" y="271" width="206" height="145"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="DhV-oh-HOP">
+                                        <rect key="frame" x="0.0" y="0.0" width="206" height="78"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="tGV-HW-Pd6">
+                                                <rect key="frame" x="0.0" y="0.0" width="96" height="78"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDB-EW-yFk">
+                                                        <rect key="frame" x="0.0" y="0.0" width="71" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address:" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9VC-fr-PF7">
+                                                        <rect key="frame" x="0.0" y="48" width="96" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="KIa-gv-3sY">
+                                                <rect key="frame" x="104" y="0.0" width="102" height="78"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Job Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a1J-6m-NBS">
+                                                        <rect key="frame" x="0.0" y="0.0" width="102" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Job Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yFG-gu-U4m">
+                                                        <rect key="frame" x="0.0" y="48" width="102" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WY5-h8-R6C">
+                                        <rect key="frame" x="64" y="100" width="78" height="45"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="27"/>
+                                        <state key="normal" title="Create"/>
+                                        <connections>
+                                            <action selector="CreateJobButton:" destination="t8t-ns-x98" eventType="touchUpInside" id="wvl-ch-TnD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehP-Ee-Eim">
+                                <rect key="frame" x="307" y="19" width="61" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="CancelButton:" destination="t8t-ns-x98" eventType="touchUpInside" id="WAr-Vy-7AF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rzQ-Ez-c8J" firstAttribute="centerY" secondItem="4ZS-R2-h54" secondAttribute="centerY" id="DLT-0g-lEo"/>
+                            <constraint firstItem="ehP-Ee-Eim" firstAttribute="leading" secondItem="4ZS-R2-h54" secondAttribute="leading" constant="307" id="fiU-gG-6hb"/>
+                            <constraint firstItem="4ZS-R2-h54" firstAttribute="top" secondItem="ehP-Ee-Eim" secondAttribute="top" constant="1" id="gAn-sf-XKr"/>
+                            <constraint firstItem="rzQ-Ez-c8J" firstAttribute="centerX" secondItem="4ZS-R2-h54" secondAttribute="centerX" id="kZt-ML-f9m"/>
+                            <constraint firstItem="4ZS-R2-h54" firstAttribute="trailing" secondItem="ehP-Ee-Eim" secondAttribute="trailing" constant="7" id="sBY-xG-7Mo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4ZS-R2-h54"/>
+                    </view>
+                    <connections>
+                        <outlet property="JobAddressTextField" destination="yFG-gu-U4m" id="0Gg-2Q-dAC"/>
+                        <outlet property="JobNameTextField" destination="a1J-6m-NBS" id="ib0-Hz-BDJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ptr-qe-Ovf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3270" y="-257"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Hxw-eF-rEj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cAB-Tx-cOY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0w9-vn-YdY">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="c99-yV-CXT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1aX-J1-1T8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="940" y="61"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="42480-building-construction-icon" width="192" height="192"/>
+    </resources>
+</document>
